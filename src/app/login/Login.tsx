@@ -23,7 +23,7 @@ export const Login = () => {
           textAlign={"center"}
           sx={{ maxWidth: "70%", marginX: "auto" }}
         >
-          <h2>User Login</h2>
+          <h2>Sign-in</h2>
           <TextField
             id="user-name"
             label="User Name"
