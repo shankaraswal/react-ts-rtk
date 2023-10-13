@@ -8,7 +8,7 @@ In the project directory, you can run:
 
 ## demo url
 
-You can see demo (https://react-ts-rtk-umber.vercel.app/).
+You can see demo (https://react-ts-rtk-sa.vercel.app/).
 
 ### `npm start`
 
