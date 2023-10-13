@@ -14,10 +14,10 @@ export const Login = () => {
       wrap="wrap"
       sx={styles.loginContainer}
     >
-      <Grid xs={8} className={"loginImageBlock"}>
+      <Grid xs={7} className={"loginImageBlock"}>
         <img title="Login" src={LoginImage} />
       </Grid>
-      <Grid xs={4} className={"loginFormBlock"}>
+      <Grid xs={5} className={"loginFormBlock"}>
         <Box
           justifyContent={"center"}
           textAlign={"center"}
