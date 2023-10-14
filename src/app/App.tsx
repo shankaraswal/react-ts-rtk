@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../glboal/components/layout/Layout";
+import { Layout } from "../global/components/layout/Layout";
 // import { Login } from "./login/Login";
 import { CssBaseline } from "@mui/material";
 
