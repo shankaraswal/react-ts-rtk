@@ -1,8 +1,8 @@
-import * as React from "react";
+import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import LoginImage from "../../assets/images/login.avif";
-import styles from "./Login.style.ts";
 import { Box, Input, Stack, TextField, Button } from "@mui/material";
+import styles from "./Login.module.scss";
 export const Login = () => {
   return (
     <Grid
@@ -12,42 +12,36 @@ export const Login = () => {
       alignItems="center"
       alignContent="center"
       wrap="wrap"
-      sx={styles.loginContainer}
+      className={styles.loginContainer}
     >
-      <Grid xs={7} className={"loginImageBlock"}>
+      <Grid xs={7} className={styles.loginImageBlock}>
         <img title="Login" src={LoginImage} />
       </Grid>
-      <Grid xs={5} className={"loginFormBlock"}>
-        <Box
-          justifyContent={"center"}
-          textAlign={"center"}
-          sx={{ maxWidth: "70%", marginX: "auto" }}
-        >
-          <h2>Sign-in</h2>
+
+      <Grid xs={5} className={styles.loginFormBlock} textAlign={"center"}>
+        <h2>Sign-in</h2>
+        <Grid direction={"row"}>
+
           <TextField
             id="user-name"
             label="User Name"
             variant="outlined"
             fullWidth
-            sx={{ mb: 3 }}
           />
+        </Grid>
+        <Grid direction={"row"}>
           <TextField
             id="password"
             label="Password"
             variant="outlined"
             fullWidth
-            sx={{ mb: 3 }}
           />
-          <Button
-            variant="contained"
-            color="success"
-            size="large"
-            fullWidth
-            sx={{ mt: 3 }}
-          >
+        </Grid>
+        <Grid direction={"row"}>
+          <Button variant="contained" color="success" size="large" fullWidth>
             Login
           </Button>
-        </Box>
+        </Grid>
       </Grid>
     </Grid>
   );
