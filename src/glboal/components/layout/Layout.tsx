@@ -1,24 +1,20 @@
-import * as React from "react";
-import { styled } from "@mui/material/styles";
+import React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
-import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
-import LoginImage from "../../../assets/images/login.jpeg";
-import CardMedia from "@mui/material/CardMedia";
+import { ProductList } from "../../../app/product-list/ProductList";
+import { Container } from "@mui/material";
+import { Header } from "../header/Header";
+import styles from "./Layout.module.scss";
 
 export const Layout = () => {
   return (
-    <Grid
-      container
-      direction="row"
-      justifyContent="center"
-      alignItems="center"
-      alignContent="center"
-      wrap="wrap"
-      columnSpacing={{ xs: 1, sm: 2 }}
-    >
-      <Grid xs={8}></Grid>
-      <Grid xs={4}> asdf asdfasdfas</Grid>
-    </Grid>
+    <Container className={styles.layoutContainer} maxWidth={"xl"}>
+      <Grid container justifySelf={"center"}>
+        <Header />
+        <Grid>
+          <ProductList />
+        </Grid>
+        <Grid>Footer</Grid>
+      </Grid>
+    </Container>
   );
 };
