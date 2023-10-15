@@ -7,14 +7,16 @@ import styles from "./Layout.module.scss";
 
 export const Layout = () => {
   return (
-    <Container className={styles.layoutContainer} maxWidth={"xl"}>
-      <Grid container justifySelf={"center"}>
-        <Header />
-        <Grid>
-          <Outlet />
-        </Grid>
-        <Footer />
-      </Grid>
-    </Container>
+    <Container
+      className={styles.layoutContainer}
+      maxWidth={false}
+      disableGutters
+    >
+      <Header />
+      <Container maxWidth={"xl"}>
+        <Outlet />
+      </Container>
+      <Footer />
+   
   );
 };
