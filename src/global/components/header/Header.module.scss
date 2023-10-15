@@ -11,5 +11,15 @@
       text-decoration: none;
       color: antiquewhite;
     }
+    .link {
+      font-size: 25px;
+      color: whitesmoke;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 2rem;
+    }
+    .link:hover {
+      text-decoration: overline;
+    }
   }
 }
