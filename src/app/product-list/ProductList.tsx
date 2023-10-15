@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import { ProductListCard } from "./views/ProductListCard";
+import styles from "./ProductList.module.scss";
+import mui from "./ProductList.style.ts";
 
 export const ProductList = () => {
   const [productData, setProductData] = useState([]);
@@ -12,9 +14,9 @@ export const ProductList = () => {
 
   console.log(productData);
   return (
-    <Grid container spacing={10} justifyContent={"flex-start"}>
+    <Grid container className={styles.productListContainer}>
       {productData.map((item, index) => (
-        <Grid xs={2} sm={3} key={index}>
+        <Grid sx={mui.productGrid} key={index}>
           <ProductListCard data={item} />
         </Grid>
       ))}
