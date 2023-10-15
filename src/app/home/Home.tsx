@@ -2,7 +2,6 @@ import { Card, CardMedia } from "@mui/material";
 import Homemage from "../../assets/images/img-prod1.jpeg";
 import Homemage1 from "../../assets/images/img-prod2.jpeg";
 import mui from "./Home.style";
-
 export const Home = () => {
   return (
     <div>
@@ -51,7 +50,7 @@ export const Home = () => {
         ethics, very popular during the Renaissance. The first line of Lorem
         Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
         1.10.32.
-      </p>{" "}
+      </p>
       <Card sx={mui.imageRatio}>
         <CardMedia
           component="img"
