@@ -2,9 +2,10 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
+import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import styles from "./ProductListCard.module.scss";
-import { Box } from "@mui/material";
+import mui from "./ProductListCard.style";
 
 export const ProductListCard = ({ data }: any) => {
   const randomLastIncresedPrice = (price: number) => {
@@ -17,10 +18,11 @@ export const ProductListCard = ({ data }: any) => {
   };
 
   return (
-    <Card className={styles.productCard}>
+    <Card className={styles.productCard} elevation={6}>
       <CardMedia
         component="img"
-        className={styles.productThumbnail}
+        sx={mui.productThumbnail}
+        // className={styles.productThumbnail}
         image={data.images[0]}
         title={data.title}
       />
