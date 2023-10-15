@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <Grid className={styles.headerRow}>
       <AppBar>
-        <Container maxWidth={false}>
+        <Container maxWidth={"xl"}>
           <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
             <Box>
               <Typography
