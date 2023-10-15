@@ -17,6 +17,6 @@ export const Layout = () => {
         <Outlet />
       </Container>
       <Footer />
-   
+    </Container>
   );
 };
