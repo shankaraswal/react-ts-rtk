@@ -1,14 +1,13 @@
 import React from "react";
-import { Layout } from "../global/components/layout/Layout";
-// import { Login } from "./login/Login";
+import { RouterProvider } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
 
+import { appRoutes } from "../routes/AppRoutes";
 const App = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Layout />
-      {/* <Login /> */}
+      <RouterProvider router={appRoutes} />
     </React.Fragment>
   );
 };
