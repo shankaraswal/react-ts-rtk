@@ -9,7 +9,6 @@ import Home from "../app/home/Home";
 import { ProductList } from "../app/product-list/ProductList";
 import { PageNotFound } from "../app/404/PageNotFound";
 import { Layout } from "../global/components/layout/Layout";
-import { RootLayout } from "../global/components/layout/RootLayout";
 
 export const routConfig = [
   {
